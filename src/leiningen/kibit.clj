@@ -3,7 +3,7 @@
 
 (defn ^:no-project-needed kibit
   [project & args]
-  (let [kibit-project '{:dependencies [[jonase/kibit "0.0.10"]]}
+  (let [kibit-project '{:dependencies [[clumsyjedi/kibit "0.0.9-SNAPSHOT"]]}
         paths (or (:source-paths project) [(:source-path project)])
         src `(kibit.driver/run '~paths ~@args)
         req '(require 'kibit.driver)]
